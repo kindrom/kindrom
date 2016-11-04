@@ -55,5 +55,8 @@ gulp.task('inuit', function() {
 });
 
 gulp.task('pages', function() {
-  return gulp.src('./build/**/*').pipe(pages({}));
+  return gulp.src('./build/**/*').pipe(pages({
+    branch: 'master',
+    remoteUrl: 'git@github.com:kindrom/kindrom.github.io.git'
+  }));
 });

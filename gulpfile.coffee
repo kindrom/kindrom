@@ -54,4 +54,4 @@ gulp.task 'inuit',
 gulp.task 'pages',
     ->
         gulp.src './build/**/*'
-            .pipe pages {}
+            .pipe pages {branch: 'master', remoteUrl: 'git@github.com:kindrom/kindrom.github.io.git'}
